@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand fw-bold" th:href="@{/}">Help Desk</a>
+        <div class="navbar-nav">
+            <a class="nav-link" th:href="@{/}">Главная</a>
+            <a class="nav-link" th:href="@{/about}">О нас</a>
+            <a class="nav-link" th:href="@{/contacts}">Контакты</a>
+            <a class="nav-link active" th:href="@{/faq}">FAQ</a>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <h1 class="fw-bold mb-4">Частые вопросы</h1>
+    <div class="card shadow-sm mb-3">
+        <div class="card-body">
+            <h2 class="h5">Как дела?</h2>
+            <p class="mb-0">Хорошо</p>
+        </div>
+    </div>
+    <div class="card shadow-sm mb-3">
+        <div class="card-body">
+            <h2 class="h5">Когда отвечает поддержка?</h2>
+            <p class="mb-0">В рабочее время</p>
+        </div>
+    </div>
+    <div class="card shadow-sm mb-3">
+        <div class="card-body">
+            <h2 class="h5">Какое рабочее время?</h2>
+            <p class="mb-0">Пн-Пт с 9:00 до 18:00</p>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
