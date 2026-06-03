@@ -13,11 +13,12 @@
     <div class="container">
         <a class="navbar-brand" href="/">Help Desk</a>
         <div class="navbar-nav">
-            <a class="nav-link" href="/">Главная</a>
-            <a class="nav-link" href="/about">О нас</a>
-            <a class="nav-link" href="/contacts">Контакты</a>
-            <a class="nav-link" th:href="/faq">FAQ</a>
-            <a class="nav-link active" href="/tickets">Заявки</a>
+            <a class="nav-link" th:href="@{/}">Главная</a>
+            <a class="nav-link" th:href="@{/about}">О нас</a>
+            <a class="nav-link" th:href="@{/contacts}">Контакты</a>
+            <a class="nav-link" th:href="@{/faq}">FAQ</a>
+            <a class="nav-link active" th:href="@{/tickets}">Заявки</a>
+            <a class="nav-link" th:href="@{/tickets/new}">Создать заявку</a>
         </div>
     </div>
 </nav>
