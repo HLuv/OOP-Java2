@@ -42,7 +42,6 @@ public class TicketController {
 
         if (bindingResult.hasErrors()) {
             return "ticket-form";
-        }
 
         Ticket savedTicket = ticketService.createTicket(ticketCreateDto);
         return "redirect:/tickets/" + savedTicket.getId() + "/success";
