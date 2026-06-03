@@ -25,7 +25,7 @@ public class TicketServiceImpl implements TicketService {
         ticket.setTitle(ticketCreateDto.getTitle());
         ticket.setDescription(ticketCreateDto.getDescription());
         ticket.setStatus(TicketStatus.NEW);
-        ticket.setCreatedAt(LocalDateTime.now());
+        ticket.setCreatedAt(LocalDateTime.now().withSecond(0).withNano(0));
         return ticketRepository.save(ticket);
     }
 
