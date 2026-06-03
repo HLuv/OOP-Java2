@@ -25,21 +25,21 @@
 </nav>
 
 <main class="container py-5">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <div>
-            <h1 class="mb-1">Список заявок</h1>
-            <p class="text-muted mb-0">Данные загружаются из H2 Database.</p>
-        </div>
-        <div class="d-flex gap-2">
-            <a th:href="@{/tickets/new}" class="btn btn-primary">
-                Создать заявку
-            </a>
 
-            <span class="badge text-bg-secondary align-self-center"
-                  th:text="${#lists.size(tickets)} + ' заявок'">
-        4 заявки
-    </span>
-        </div>
+    <div class="mb-4">
+        <h1 class="mb-1">Список заявок</h1>
+        <p class="text-muted mb-3">Данные загружаются из H2 Database.</p>
+
+        <a th:href="@{/tickets/new}" class="btn btn-primary">
+            Создать заявку
+        </a>
+    </div>
+
+    <div class="mb-3">
+        <span class="badge text-bg-secondary"
+              th:text="${#lists.size(tickets)} + ' заявок'">
+        </span>
+    </div>
 
     <div class="card shadow-sm">
         <div class="card-body">
