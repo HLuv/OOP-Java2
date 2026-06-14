@@ -23,7 +23,7 @@ public class SecurityConfig {
 
                         .requestMatchers(HttpMethod.GET,
                                 "/", "/about", "/contacts", "/login",
-                                "/tickets/new", "/tickets/*/success"
+                                "/tickets/new", "/tickets/*/success", "/faq"
                         ).permitAll()
                         .requestMatchers(HttpMethod.POST, "/tickets").permitAll()
 
