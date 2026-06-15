@@ -49,13 +49,16 @@
         <div class="col-md-5">
             <div class="card shadow-sm border-0">
                 <div class="card-body p-4">
-                    <h1 class="h3 mb-3 text-center">Вход администратора</h1>
+                    <h1 class="h3 mb-3 text-center">Вход </h1>
 
                     <div th:if="${param.error}" class="alert alert-danger">
                         Неверный логин или пароль.
                     </div>
                     <div th:if="${param.logout}" class="alert alert-success">
                         Вы вышли из системы.
+                    </div>
+                    <div th:if="${param.authRequired}" class="alert alert-warning">
+                        Для доступа к этой странице необходимо войти в систему.
                     </div>
 
                     <form th:action="@{/login}" method="post">
